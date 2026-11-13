@@ -11,6 +11,18 @@ $btn-primary:hsl(20, 30%, 35%);
 
 
 // === Mixin (definisci almeno @mixin card-elevata o equivalente) ===
+@mixin card-elevata {
+    box-shadow:0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease;
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow:0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+}
+.card {
+    @include card-elevata()
+}
+
 
 
 
