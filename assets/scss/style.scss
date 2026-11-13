@@ -23,10 +23,25 @@ $btn-primary:hsl(20, 30%, 35%);
 };
 .btn-primary {
     background-color:$btn-primary!important;
-    border: none;
+    border-radius: 6px;
+    border: $btn-primary;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: hsl(20, 30%, 27%) !important;
+    border: hsl(20, 30%, 27%);
+}
+footer a:hover {
+    color: hsl(40, 30%, 90%) !important;
+}
+header nav a:hover {
+    color: hsl(40, 30%, 90%) !important;
 }
 
 // === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
+html {
+    scroll-padding-top: 200px;
+}
 #studio {
     min-height: 80vh;
 }
